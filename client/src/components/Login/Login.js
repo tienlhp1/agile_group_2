@@ -99,23 +99,8 @@ const Login = () => {
                     }
                     
                 </div>
-                <div className={styles.option}>
-                  <span>or</span>
-                </div>
-                <div> 
-                  <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}>
-                    <GoogleLogin
-                      onSuccess={googleSuccess}
-                      onError={googleError}
-                      text='continue_with'
-                      useOneTap
-                      auto_select
-                      state_cookie_domain='single_host_origin'
-                    />
-                  </GoogleOAuthProvider>
-                </div>
-          </div>
-          <Grid container justifyContent="flex-end">
+                          </div>
+          <Grid container justifyContent="center">
             <Grid item>
               <Button onClick={switchMode}>
                 { isSignup ? 'Already have an account? Sign in' : "Don't have an account? Sign Up" }
