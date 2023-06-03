@@ -47,20 +47,20 @@ const ClientList = () => {
     </div>
   }
 
-  if (clients.length === 0) {
-    return <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', paddingTop: '20px', margin: '80px' }}>
-      <NoData />
-      <p style={{ padding: '40px', color: 'gray', textAlign: 'center' }}>No customers yet. Click the plus icon to add customer</p>
+  // if (clients.length === 0) {
+  //   return <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', paddingTop: '20px', margin: '80px' }}>
+  //     <NoData />
+  //     <p style={{ padding: '40px', color: 'gray', textAlign: 'center' }}>No customers yet. Click the plus icon to add customer</p>
 
-    </div>
-  }
+  //   </div>
+  // }
 
   return (
     <div>
-      <h1 
-        style={{marginLeft: '100px'}}
+      <h1
+        style={{ marginLeft: '100px' }}
       >Customer Management</h1>
-      <div style={{display: 'flex', justifyContent: 'end', marginTop:'50px'}}>
+      <div style={{ display: 'flex', justifyContent: 'end', marginTop: '50px' }}>
         <Button onClick={() => {
           setCurrentId(null);
           setOpen(true);
