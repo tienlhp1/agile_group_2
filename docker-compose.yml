@@ -2,14 +2,15 @@ version: '3.8'
 services:
   client:
     container_name: client
-    build: ./client
+    image: bachhoang1112/my-react-app-fe
     ports:
       - '3000:3000'
     depends_on:
       - server
+    restart: always
   server:
     container_name: server
-    build: ./server
+    image: bachhoang1112/my-react-app-be
     ports:
       - '5000:5000'
 
