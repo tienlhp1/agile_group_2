@@ -74,6 +74,10 @@ const AddClient = ({ setOpen, open, currentId, setCurrentId }) => {
   }, [client])
 
   useEffect(() => {
+    if(!currentId) setClientData(null);
+  }, [currentId])
+
+  useEffect(() => {
     setUser(JSON.parse(localStorage.getItem('profile')))
     // setClientData({...clientData, userId: user?.result?._id})
   }, [location])
@@ -155,7 +159,7 @@ const AddClient = ({ setOpen, open, currentId, setCurrentId }) => {
                 name='name'
                 type='text'
                 onChange={(e) => setClientData({ ...clientData, name: e.target.value })}
-                value={clientData.name}
+                value={clientData?.name}
               />
 
               <input
@@ -164,7 +168,7 @@ const AddClient = ({ setOpen, open, currentId, setCurrentId }) => {
                 name='email'
                 type='text'
                 onChange={(e) => setClientData({ ...clientData, email: e.target.value })}
-                value={clientData.email}
+                value={clientData?.email}
               />
 
               <input
@@ -173,7 +177,7 @@ const AddClient = ({ setOpen, open, currentId, setCurrentId }) => {
                 name='phone'
                 type='text'
                 onChange={(e) => setClientData({ ...clientData, phone: e.target.value })}
-                value={clientData.phone}
+                value={clientData?.phone}
               />
 
               <input
@@ -182,7 +186,7 @@ const AddClient = ({ setOpen, open, currentId, setCurrentId }) => {
                 name='address'
                 type='text'
                 onChange={(e) => setClientData({ ...clientData, address: e.target.value })}
-                value={clientData.address}
+                value={clientData?.address}
               />
             </div>
 

@@ -91,7 +91,7 @@ export const getClientsByUser = async (req, res) => {
     const { searchQuery } = req.query;
 
     try {
-        const clients = await ClientModel.find({ userId: searchQuery });
+        const clients = await ClientModel.find();
 
         res.json({ data: clients });
     } catch (error) {    
