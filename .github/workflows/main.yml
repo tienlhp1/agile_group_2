@@ -36,5 +36,6 @@ jobs:
           cd bachhv/build3
           docker-compose stop
           docker-compose pull
-          docker-compose up -d
+          docker-compose up -d --build
+          
           
