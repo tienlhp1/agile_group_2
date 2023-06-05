@@ -47,19 +47,11 @@ const ClientList = () => {
     </div>
   }
 
-  // if (clients.length === 0) {
-  //   return <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', paddingTop: '20px', margin: '80px' }}>
-  //     <NoData />
-  //     <p style={{ padding: '40px', color: 'gray', textAlign: 'center' }}>No customers yet. Click the plus icon to add customer</p>
-
-  //   </div>
-  // }
-
   return (
     <div>
       <h1 
         style={{marginLeft: '100px'}}
-      >Customer Management 123456</h1>
+      >Customer Management Test</h1>
       <div style={{display: 'flex', justifyContent: 'end', marginTop:'50px'}}>
         <Button onClick={() => {
           setCurrentId(null);
