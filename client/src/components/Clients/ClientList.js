@@ -51,7 +51,7 @@ const ClientList = () => {
     <div>
       <h1 
         style={{marginLeft: '100px'}}
-      >Customer Management Test</h1>
+      >Customer Management Test CICD</h1>
       <div style={{display: 'flex', justifyContent: 'end', marginTop:'50px'}}>
         <Button onClick={() => {
           setCurrentId(null);
